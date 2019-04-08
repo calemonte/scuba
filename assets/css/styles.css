@@ -183,7 +183,12 @@ Media queries
     max-width: 95%;
   }
 
-  #logo > img {
-    max-width: 80%;
+  #title {
+    font-size: 1.1em;
   }
+
+  #description {
+    font-size: 0.8em;
+  }
+
 }
