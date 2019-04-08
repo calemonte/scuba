@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 100%;
+  min-height: 100vh;
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    #00d2ff,
+    #3a7bd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    #00d2ff,
+    #3a7bd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
+  color: azure;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content {
+  flex: 1 0 auto;
+  max-width: 75%;
+  margin: 3em auto;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.9em;
+}
+
+#logo {
+  width: 100%;
+  align-content: center;
+}
+
+#logo > img {
+  max-width: 60%;
+}
+
+.main {
+  line-height: 1.5;
+}
+
+hr {
+  width: 15%;
+  margin-top: 1em;
+  border-top: 1px solid white;
+}
+
+#description {
+  margin-top: 1em;
+}
+
+button {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 1em;
+  text-decoration: none;
+  background: none;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer {
+  flex-shrink: 0;
+  margin-bottom: 0.5em;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #content {
+    max-width: 95%;
+  }
+
+  #logo > img {
+    max-width: 80%;
+  }
+}
