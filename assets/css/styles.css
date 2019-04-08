@@ -123,12 +123,7 @@ button:hover {
 }
 
 button:active {
-  transform: scale(0.95);
-}
-
-button > a {
-  text-decoration: none;
-  color: #ffffff;
+  transform: scale(0.98);
 }
 
 .main {
