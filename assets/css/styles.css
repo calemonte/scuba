@@ -89,6 +89,11 @@ nav > ul > li {
   filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
+.active {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
 /* 
 ========================
 Homepage Styles
