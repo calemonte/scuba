@@ -23,7 +23,7 @@ html {
     #3a7bd5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Open Sans", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: azure;
 }
 
@@ -31,6 +31,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  padding: 0.6em;
+}
+
+a {
+  color: #FF7F4F;
 }
 
 /* 
@@ -52,11 +64,12 @@ Component Styles
   transition-property: color, background-color;
 }
 
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+.hvr-fade:hover,
+.hvr-fade:focus,
+.hvr-fade:active {
   background-color: white;
   color: black;
 }
-
 
 /* 
 ========================
@@ -79,7 +92,7 @@ nav > ul > li {
 .navlink {
   color: white;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
@@ -96,13 +109,14 @@ nav > ul > li {
 
 /* 
 ========================
-Homepage Styles
+Homepage & About Page Styles
 ========================
 */
 
 hr {
   width: 15%;
   margin-top: 1em;
+  margin-bottom: 1em;
   border-top: 1px solid white;
 }
 
@@ -115,7 +129,7 @@ button {
   background: none;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 button:hover {
@@ -127,7 +141,28 @@ button:active {
 }
 
 .main {
+  max-width: 70%;
+  margin: 0px auto;
   line-height: 1.5;
+}
+
+.emphasis {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.about-subhead {
+  display: inline-block;
+  border-bottom: 2px solid #ffffff;
+}
+
+.about-list {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+#about-description {
+  text-align: left;
 }
 
 #content {
@@ -152,6 +187,7 @@ button:active {
 
 #description {
   margin-top: 1em;
+  font-size: 1.3em;
 }
 
 /* 
@@ -183,7 +219,10 @@ Media queries
   }
 
   #description {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
 
+  #about-description {
+    max-width: 80%;
+  }
 }
